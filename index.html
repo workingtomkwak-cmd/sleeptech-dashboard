@@ -83,7 +83,7 @@
 
   <div class="section-title">AI Insight</div>
   <div class="insight">
-    <h3>✦ Daily AI Insight</h3>
+    <h3>✦ AI 인사이트</h3>
     <p id="insightText"></p>
   </div>
 
@@ -92,35 +92,7 @@
   Updated automatically each morning by the scheduled task.</p>
 
 <script>
-const HISTORY = [
-  {
-    "date": "2026-07-13",
-    "ios": {
-      "asOf": "2026-07-11",
-      "downloads30d": 11,
-      "downloadsLifetime": 39,
-      "active30d": 5,
-      "activeLifetime": 10,
-      "impressions30d": 177,
-      "impressionsLifetime": 396,
-      "pageViews30d": 49,
-      "cvr30d": "9.32%",
-      "cvrLifetime": "9.85%"
-    },
-    "android": {
-      "asOf": "2026-07-12",
-      "downloads30d": 1,
-      "downloadsLifetime": 23,
-      "active30d": 5,
-      "installedUsers": 13,
-      "visitors30d": 1,
-      "visitorsLifetime": 49,
-      "cvr30d": "100%",
-      "cvrLifetime": "40.82%"
-    },
-    "insight": "The App Store is doing the heavy lifting: 39 lifetime downloads vs 23 on Google Play, and 396 lifetime impressions vs just 49 Play store visitors. Visibility, not conversion, is the bottleneck — Play converts 40.8% of its rare visitors while iOS converts 9.3% of a much larger impression pool. iOS momentum dipped this month (30-day downloads -56%, ~11 vs 25 prior), and Play is nearly dormant with 1 acquisition in 30 days, mostly reliant on Google Play explore traffic (17 of 20 lifetime listing acquisitions). Priority: drive more store traffic (ASO keywords, external links) rather than tweaking the listing itself."
-  }
-];
+const HISTORY = [{"date": "2026-07-13", "ios": {"asOf": "2026-07-11", "downloads30d": 11, "downloadsLifetime": 39, "active30d": 5, "activeLifetime": 10, "impressions30d": 177, "impressionsLifetime": 396, "pageViews30d": 49, "cvr30d": "9.32%", "cvrLifetime": "9.85%"}, "android": {"asOf": "2026-07-12", "downloads30d": 1, "downloadsLifetime": 23, "active30d": 5, "installedUsers": 13, "visitors30d": 1, "visitorsLifetime": 49, "cvr30d": "100%", "cvrLifetime": "40.82%"}, "insight": "현재 성장은 App Store가 주도하고 있습니다 — 누적 다운로드 39건(iOS) vs 23건(Play), 노출도 396회 vs 스토어 방문 49회로 격차가 큽니다. 문제는 전환율이 아니라 '노출'입니다. Play는 방문자의 40.8%가 설치할 정도로 등록정보 자체는 잘 작동하는데(건강/운동 동종 앱 중앙값 약 49% 대비 준수), 방문자가 한 달에 1명뿐입니다. iOS도 30일 다운로드가 전월 대비 -56% 감소했습니다. Play 유입의 85%(누적 20건 중 17건)가 'Google Play 탐색'에서 나오는 만큼, 검색 유입을 늘릴 ASO가 최우선입니다: '수면', '이명', '청력 테스트', 'TSC' 등 한국어 키워드를 제목·짧은 설명에 반영하고, 스크린샷에 임상 검증(스탠퍼드·삼성서울병원) 문구를 앞세우는 A/B 실험을 권합니다. 현재 평점 5.0(리뷰 4개)은 강점이니 앱 내 리뷰 요청 타이밍을 추가해 리뷰 수를 두 자릿수로 늘리면 탐색 노출에도 도움이 됩니다. 운영 중인 유튜브 채널·hevers.net에서 스토어로 직접 연결되는 딥링크 배치도 저비용으로 시도할 수 있는 유입원입니다."}];
 const latest = HISTORY[HISTORY.length - 1];
 const prev = HISTORY.length > 1 ? HISTORY[HISTORY.length - 2] : null;
 
