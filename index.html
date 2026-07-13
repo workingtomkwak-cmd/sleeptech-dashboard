@@ -71,13 +71,13 @@
 
   <div class="section-title" id="iosHistTitle">App Store — History (recent 14 days)</div>
   <div class="table-wrap"><table>
-    <thead><tr><th>Date</th><th>DL 30d</th><th>DL lifetime</th><th>Active 30d</th><th>Installs lifetime*</th><th>Impr. 30d</th><th>Impr. lifetime</th><th>CVR 30d</th><th>CVR lifetime</th></tr></thead>
+    <thead><tr><th>Date</th><th>DL 30d</th><th>DL lifetime</th><th>Active 30d</th><th>Installs lifetime*</th><th>Impr. 30d</th><th>Impr. lifetime</th><th>CVR 30d</th><th>CVR lifetime</th><th>Paid subs</th><th>MRR</th></tr></thead>
     <tbody id="iosHist"></tbody>
   </table></div>
 
   <div class="section-title">Google Play — History (recent 14 days)</div>
   <div class="table-wrap"><table>
-    <thead><tr><th>Date</th><th>DL 30d</th><th>DL lifetime</th><th>Active 30d (MAU)</th><th>Installed users</th><th>Visitors 30d</th><th>Visitors lifetime</th><th>CVR 30d</th><th>CVR lifetime</th></tr></thead>
+    <thead><tr><th>Date</th><th>DL 30d</th><th>DL lifetime</th><th>Active 30d (MAU)</th><th>Installed users</th><th>Visitors 30d</th><th>Visitors lifetime</th><th>CVR 30d</th><th>CVR lifetime</th><th>Buyers 28d</th><th>Revenue 28d</th></tr></thead>
     <tbody id="andHist"></tbody>
   </table></div>
 
@@ -89,10 +89,11 @@
 
   <p class="note">App Store: downloads = first-time downloads (30d) / total downloads incl. redownloads (lifetime); active = Active Devices (opt-in only); *Apple doesn't publish lifetime unique active devices — "Installs lifetime" is the opt-in Installations metric, the closest available. Data lags ~2 days.<br>
   Google Play: downloads = user acquisition events; active 30d = monthly active devices; "Installed users" = users with the app on a device active in the last 30 days (Play doesn't publish lifetime active users); visitors = store listing visitors. Data lags ~1–4 days.<br>
+  Subscriptions: App Store = active paid subscription plans + monthly recurring revenue (Subscriptions summary); Google Play = monthly buyers and revenue over the last 28 days (Monetize overview; "—" = no data/0).<br>
   Updated automatically each morning by the scheduled task.</p>
 
 <script>
-const HISTORY = [{"date": "2026-07-13", "ios": {"asOf": "2026-07-11", "downloads30d": 11, "downloadsLifetime": 39, "active30d": 5, "activeLifetime": 10, "impressions30d": 177, "impressionsLifetime": 396, "pageViews30d": 49, "cvr30d": "9.32%", "cvrLifetime": "9.85%"}, "android": {"asOf": "2026-07-12", "downloads30d": 1, "downloadsLifetime": 23, "active30d": 5, "installedUsers": 13, "visitors30d": 1, "visitorsLifetime": 49, "cvr30d": "100%", "cvrLifetime": "40.82%"}, "insight": "현재 성장은 App Store가 주도하고 있습니다 — 누적 다운로드 39건(iOS) vs 23건(Play), 노출도 396회 vs 스토어 방문 49회로 격차가 큽니다. 문제는 전환율이 아니라 '노출'입니다. Play는 방문자의 40.8%가 설치할 정도로 등록정보 자체는 잘 작동하는데(건강/운동 동종 앱 중앙값 약 49% 대비 준수), 방문자가 한 달에 1명뿐입니다. iOS도 30일 다운로드가 전월 대비 -56% 감소했습니다. Play 유입의 85%(누적 20건 중 17건)가 'Google Play 탐색'에서 나오는 만큼, 검색 유입을 늘릴 ASO가 최우선입니다: '수면', '이명', '청력 테스트', 'TSC' 등 한국어 키워드를 제목·짧은 설명에 반영하고, 스크린샷에 임상 검증(스탠퍼드·삼성서울병원) 문구를 앞세우는 A/B 실험을 권합니다. 현재 평점 5.0(리뷰 4개)은 강점이니 앱 내 리뷰 요청 타이밍을 추가해 리뷰 수를 두 자릿수로 늘리면 탐색 노출에도 도움이 됩니다. 운영 중인 유튜브 채널·hevers.net에서 스토어로 직접 연결되는 딥링크 배치도 저비용으로 시도할 수 있는 유입원입니다."}];
+const HISTORY = [{"date": "2026-07-13", "ios": {"asOf": "2026-07-11", "downloads30d": 11, "downloadsLifetime": 39, "active30d": 5, "activeLifetime": 10, "impressions30d": 177, "impressionsLifetime": 396, "pageViews30d": 49, "cvr30d": "9.32%", "cvrLifetime": "9.85%", "paidSubs": 1, "mrr": "$1"}, "android": {"asOf": "2026-07-12", "downloads30d": 1, "downloadsLifetime": 23, "active30d": 5, "installedUsers": 13, "visitors30d": 1, "visitorsLifetime": 49, "cvr30d": "100%", "cvrLifetime": "40.82%", "monthlyBuyers": 0, "revenue28d": "₩0"}, "insight": "현재 성장은 App Store가 주도하고 있습니다 — 누적 다운로드 39건(iOS) vs 23건(Play), 노출도 396회 vs 스토어 방문 49회로 격차가 큽니다. 문제는 전환율이 아니라 '노출'입니다. Play는 방문자의 40.8%가 설치할 정도로 등록정보 자체는 잘 작동하는데(건강/운동 동종 앱 중앙값 약 49% 대비 준수), 방문자가 한 달에 1명뿐입니다. iOS도 30일 다운로드가 전월 대비 -56% 감소했습니다. Play 유입의 85%(누적 20건 중 17건)가 'Google Play 탐색'에서 나오는 만큼, 검색 유입을 늘릴 ASO가 최우선입니다: '수면', '이명', '청력 테스트', 'TSC' 등 한국어 키워드를 제목·짧은 설명에 반영하고, 스크린샷에 임상 검증(스탠퍼드·삼성서울병원) 문구를 앞세우는 A/B 실험을 권합니다. 현재 평점 5.0(리뷰 4개)은 강점이니 앱 내 리뷰 요청 타이밍을 추가해 리뷰 수를 두 자릿수로 늘리면 탐색 노출에도 도움이 됩니다. 운영 중인 유튜브 채널·hevers.net에서 스토어로 직접 연결되는 딥링크 배치도 저비용으로 시도할 수 있는 유입원입니다."}];
 const latest = HISTORY[HISTORY.length - 1];
 const prev = HISTORY.length > 1 ? HISTORY[HISTORY.length - 2] : null;
 
@@ -122,7 +123,9 @@ document.getElementById('iosKpis').innerHTML =
   card('tag30','30 DAYS','Impressions', I.impressions30d, PI && PI.impressions30d) +
   card('taglife','LIFETIME','Impressions', I.impressionsLifetime, PI && PI.impressionsLifetime) +
   card('tag30','30 DAYS','Conversion rate', I.cvr30d, null) +
-  card('taglife','LIFETIME','Conversion rate', I.cvrLifetime, null);
+  card('taglife','LIFETIME','Conversion rate', I.cvrLifetime, null) +
+  card('tag30','CURRENT','Paid subscriptions', I.paidSubs, PI && PI.paidSubs) +
+  card('taglife','CURRENT','Monthly recurring revenue', I.mrr, null);
 document.getElementById('andKpis').innerHTML =
   card('tag30','30 DAYS','Downloads', A.downloads30d, PA && PA.downloads30d) +
   card('taglife','LIFETIME','Downloads', A.downloadsLifetime, PA && PA.downloadsLifetime) +
@@ -131,13 +134,15 @@ document.getElementById('andKpis').innerHTML =
   card('tag30','30 DAYS','Store visitors', A.visitors30d, PA && PA.visitors30d) +
   card('taglife','LIFETIME','Store visitors', A.visitorsLifetime, PA && PA.visitorsLifetime) +
   card('tag30','30 DAYS','Conversion rate', A.cvr30d, null) +
-  card('taglife','LIFETIME','Conversion rate', A.cvrLifetime, null);
+  card('taglife','LIFETIME','Conversion rate', A.cvrLifetime, null) +
+  card('tag30','28 DAYS','Monthly buyers', A.monthlyBuyers, PA && PA.monthlyBuyers) +
+  card('taglife','28 DAYS','Revenue', A.revenue28d, null);
 
 const last14 = HISTORY.slice(-14).slice().reverse();
 document.getElementById('iosHist').innerHTML = last14.map(e =>
-  '<tr><td>' + e.date + '</td><td>' + e.ios.downloads30d + '</td><td>' + e.ios.downloadsLifetime + '</td><td>' + e.ios.active30d + '</td><td>' + e.ios.activeLifetime + '</td><td>' + e.ios.impressions30d + '</td><td>' + e.ios.impressionsLifetime + '</td><td>' + e.ios.cvr30d + '</td><td>' + e.ios.cvrLifetime + '</td></tr>').join('');
+  '<tr><td>' + e.date + '</td><td>' + e.ios.downloads30d + '</td><td>' + e.ios.downloadsLifetime + '</td><td>' + e.ios.active30d + '</td><td>' + e.ios.activeLifetime + '</td><td>' + e.ios.impressions30d + '</td><td>' + e.ios.impressionsLifetime + '</td><td>' + e.ios.cvr30d + '</td><td>' + e.ios.cvrLifetime + '</td><td>' + (e.ios.paidSubs ?? '—') + '</td><td>' + (e.ios.mrr ?? '—') + '</td></tr>').join('');
 document.getElementById('andHist').innerHTML = last14.map(e =>
-  '<tr><td>' + e.date + '</td><td>' + e.android.downloads30d + '</td><td>' + e.android.downloadsLifetime + '</td><td>' + e.android.active30d + '</td><td>' + e.android.installedUsers + '</td><td>' + e.android.visitors30d + '</td><td>' + e.android.visitorsLifetime + '</td><td>' + e.android.cvr30d + '</td><td>' + e.android.cvrLifetime + '</td></tr>').join('');
+  '<tr><td>' + e.date + '</td><td>' + e.android.downloads30d + '</td><td>' + e.android.downloadsLifetime + '</td><td>' + e.android.active30d + '</td><td>' + e.android.installedUsers + '</td><td>' + e.android.visitors30d + '</td><td>' + e.android.visitorsLifetime + '</td><td>' + e.android.cvr30d + '</td><td>' + e.android.cvrLifetime + '</td><td>' + (e.android.monthlyBuyers ?? '—') + '</td><td>' + (e.android.revenue28d ?? '—') + '</td></tr>').join('');
 
 document.getElementById('insightText').textContent = latest.insight || 'No insight generated yet.';
 
