@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Tech — Daily Store Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", sans-serif; background: #f6f7f9; color: #1a1d21; padding: 24px; }
+  .header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .header .title-wrap { display: flex; align-items: center; gap: 12px; }
+  .header .app-icon { border-radius: 9px; box-shadow: 0 1px 3px rgba(0,0,0,.25); flex-shrink: 0; }
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header .sub { color: #6b7280; font-size: 13px; }
+  .section-title { font-size: 13px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: .05em; margin: 22px 0 10px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px 16px; }
+  .card .label { font-size: 12px; color: #6b7280; margin-bottom: 6px; }
+  .card .value { font-size: 26px; font-weight: 700; }
+  .card .delta { font-size: 12px; margin-top: 4px; }
+  .delta.up { color: #16a34a; } .delta.down { color: #dc2626; } .delta.flat { color: #9ca3af; }
+  .store-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600; border-radius: 4px; padding: 2px 7px; margin-bottom: 8px; }
+  .store-tag svg { flex-shrink: 0; }
+  .ios { background: #eef2ff; color: #4338ca; }
+  .android { background: #ecfdf5; color: #047857; }
+  .chart-box { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; height: 300px; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; font-size: 13px; }
+  th, td { text-align: right; padding: 8px 12px; border-bottom: 1px solid #f1f2f4; }
+  th:first-child, td:first-child { text-align: left; }
+  th { background: #fafbfc; color: #6b7280; font-weight: 600; font-size: 12px; }
+  .note { font-size: 12px; color: #9ca3af; margin-top: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="title-wrap">
+      <svg class="app-icon" viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg" aria-label="Sleep Tech app icon">
+        <defs><linearGradient id="appbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080c"/><stop offset="1" stop-color="#272b42"/></linearGradient></defs>
+        <rect width="100" height="100" fill="url(#appbg)"/>
+        <rect x="13" y="41" width="6.5" height="8" fill="#8ec6c6"/>
+        <rect x="13" y="54" width="6.5" height="8" fill="#8ec6c6"/>
+        <text x="24" y="64" font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="21" letter-spacing="-0.5" fill="#ffffff">Hevers</text>
+      </svg>
+      <h1>Sleep Tech — Daily Store Report</h1>
+    </div>
+    <span class="sub" id="updated"></span>
+  </div>
+
+  <div class="section-title">Latest snapshot</div>
+  <div class="cards" id="kpis"></div>
+
+  <div class="section-title">Trends</div>
+  <div class="chart-box"><canvas id="trendChart"></canvas></div>
+
+  <div class="section-title">History (recent 14 days)</div>
+  <table>
+    <thead><tr>
+      <th>Date</th><th>iOS downloads (30d)</th><th>iOS active devices (30d)</th><th>iOS impressions (30d)</th><th>iOS conv.</th><th>Android installed users</th><th>Android installs (release)</th>
+    </tr></thead>
+    <tbody id="histBody"></tbody>
+  </table>
+
+  <p class="note">iOS metrics are 30-day rolling totals from App Store Connect (data lags ~2 days; Active Devices is opt-in only). Android metrics are lifetime installed users and installs of the latest production release from Play Console (data lags ~1 day). Updated automatically each morning by the scheduled task.</p>
+
+<script>
+const HISTORY = [
+  {
+    "date": "2026-07-13",
+    "ios": {
+      "asOf": "2026-07-11",
+      "downloads30d": 11,
+      "downloadsChange": "-56%",
+      "activeDevices30d": 5,
+      "impressions30d": 177,
+      "pageViews30d": 49,
+      "conversionRate": "9.32%"
+    },
+    "android": {
+      "asOf": "2026-07-12",
+      "installedUsers": 13,
+      "installsLatestRelease": 9
+    }
+  }
+];
+const latest = HISTORY[HISTORY.length - 1];
+const prev = HISTORY.length > 1 ? HISTORY[HISTORY.length - 2] : null;
+
+document.getElementById('updated').textContent =
+  'Last updated ' + latest.date + ' · iOS data through ' + latest.ios.asOf + ' · Android through ' + latest.android.asOf;
+
+function deltaHtml(cur, before) {
+  if (before == null || before === cur) return '<div class="delta flat">— vs yesterday</div>';
+  const d = cur - before;
+  const cls = d > 0 ? 'up' : 'down';
+  const sign = d > 0 ? '+' : '';
+  return '<div class="delta ' + cls + '">' + sign + d + ' vs yesterday</div>';
+}
+
+const kpis = [
+  { tag: 'ios', label: 'Downloads (30d)', v: latest.ios.downloads30d, p: prev && prev.ios.downloads30d },
+  { tag: 'ios', label: 'Active devices (30d)', v: latest.ios.activeDevices30d, p: prev && prev.ios.activeDevices30d },
+  { tag: 'ios', label: 'Impressions (30d)', v: latest.ios.impressions30d, p: prev && prev.ios.impressions30d },
+  { tag: 'ios', label: 'Conversion rate', v: latest.ios.conversionRate, p: null },
+  { tag: 'android', label: 'Installed users (total)', v: latest.android.installedUsers, p: prev && prev.android.installedUsers },
+  { tag: 'android', label: 'Installs (latest release)', v: latest.android.installsLatestRelease, p: prev && prev.android.installsLatestRelease },
+];
+const APPLE_SVG = '<svg viewBox="0 0 384 512" width="10" height="10" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.9-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>';
+const PLAY_SVG = '<svg viewBox="0 0 512 512" width="10" height="10" xmlns="http://www.w3.org/2000/svg"><path fill="#00f076" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/><path fill="#00d7fe" d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0z"/><path fill="#ffc900" d="M472.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8z"/><path fill="#ff3a44" d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>';
+document.getElementById('kpis').innerHTML = kpis.map(k =>
+  '<div class="card"><span class="store-tag ' + k.tag + '">' + (k.tag === 'ios' ? APPLE_SVG + 'APP STORE' : PLAY_SVG + 'GOOGLE PLAY') + '</span>' +
+  '<div class="label">' + k.label + '</div><div class="value">' + k.v + '</div>' +
+  (typeof k.v === 'number' ? deltaHtml(k.v, k.p) : '') + '</div>'
+).join('');
+
+const last14 = HISTORY.slice(-14);
+document.getElementById('histBody').innerHTML = last14.slice().reverse().map(e =>
+  '<tr><td>' + e.date + '</td><td>' + e.ios.downloads30d + '</td><td>' + e.ios.activeDevices30d + '</td><td>' +
+  e.ios.impressions30d + '</td><td>' + e.ios.conversionRate + '</td><td>' + e.android.installedUsers + '</td><td>' +
+  e.android.installsLatestRelease + '</td></tr>'
+).join('');
+
+new Chart(document.getElementById('trendChart'), {
+  type: 'line',
+  data: {
+    labels: HISTORY.map(e => e.date),
+    datasets: [
+      { label: 'iOS downloads (30d)', data: HISTORY.map(e => e.ios.downloads30d), borderColor: '#4338ca', backgroundColor: '#4338ca', tension: .3 },
+      { label: 'iOS active devices (30d)', data: HISTORY.map(e => e.ios.activeDevices30d), borderColor: '#818cf8', backgroundColor: '#818cf8', tension: .3 },
+      { label: 'Android installed users', data: HISTORY.map(e => e.android.installedUsers), borderColor: '#047857', backgroundColor: '#047857', tension: .3 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: { y: { beginAtZero: true, ticks: { precision: 0 } } },
+    plugins: { legend: { position: 'bottom' } }
+  }
+});
+</script>
+</body>
+</html>
