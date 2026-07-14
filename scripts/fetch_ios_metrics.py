@@ -164,7 +164,9 @@ if __name__ == "__main__":
     try:
         main()
     except Exception:
+        err = traceback.format_exc()
         with open("last_error.txt", "w") as f:
             f.write(time.strftime("%Y-%m-%dT%H:%M:%SZ\n", time.gmtime()))
-            f.write(traceback.format_exc())
+            f.write(err)
         print("FAILED — wrote last_error.txt")
+        print(err)
