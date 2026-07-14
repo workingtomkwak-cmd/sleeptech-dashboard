@@ -1,0 +1,46 @@
+name: iOS metrics (App Store Connect API)
+
+on:
+  schedule:
+    - cron: '30 20 * * *'   # 05:30 KST, before the 08:15 daily Cowork report
+  workflow_dispatch: {}
+  push:
+    paths:
+      - '.github/workflows/ios-metrics.yml'
+      - 'scripts/fetch_ios_metrics.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ios-metrics
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet pyjwt cryptography
+
+      - name: Fetch metrics
+        env:
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          ASC_KEY_ID: M4TCG3HM48
+          ASC_ISSUER_ID: b0cefecc-225a-49b0-a8ac-b7f25879a2ac
+          APP_ID: '6757299435'
+        run: python scripts/fetch_ios_metrics.py
+
+      - name: Commit results
+        run: |
+          git config user.name "ios-metrics-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A ios_metrics.json last_error.txt data/ || true
+          git diff --cached --quiet && echo "no changes" || git commit -m "iOS metrics $(date -u +%F)"
+          git push
