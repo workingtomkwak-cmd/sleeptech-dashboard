@@ -1,9 +1,7 @@
 {
- "generatedAt": "2026-07-15T23:44:07Z",
- "status": "pending",
- "notes": [
-  "ONGOING analytics report request created; Apple may take up to 48h to generate the first instances."
- ],
+ "generatedAt": "2026-07-16T23:41:45Z",
+ "status": "ok",
+ "notes": [],
  "reports": [
   "ARKit ARSession Duration",
   "ARKit ARSession Failures",
@@ -162,5 +160,23 @@
   "iBeacon Ranging Usage",
   "iBeacon Stop Monitoring for Region Usage"
  ],
- "daily": {}
+ "daily": {
+  "2026-07-12": {
+   "pageViewCount": 1,
+   "impressionsTotal": 1
+  },
+  "2026-07-13": {
+   "impressionsTotal": 8,
+   "pageViewCount": 2
+  },
+  "2026-07-14": {
+   "totalDownloads": 9,
+   "pageViewCount": 26
+  },
+  "2026-07-15": {
+   "totalDownloads": 2,
+   "pageViewCount": 37,
+   "impressionsTotal": 29
+  }
+ }
 }
