@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-04T00:15:32Z",
+ "generatedAt": "2026-08-04T23:49:30Z",
  "status": "ok",
  "notes": [],
  "reports": [
@@ -245,11 +245,16 @@
    "pageViewCount": 3
   },
   "2026-08-01": {
-   "impressionsTotal": 4
+   "impressionsTotal": 6
   },
   "2026-08-02": {
-   "totalDownloads": 1,
-   "impressionsTotal": 1
+   "totalDownloads": 2,
+   "impressionsTotal": 2
+  },
+  "2026-08-03": {
+   "totalDownloads": 2,
+   "pageViewCount": 9,
+   "impressionsTotal": 13
   }
  }
 }

@@ -1,5 +1,14 @@
 Date	App Name	App Apple Identifier	Event	Page Type	Source Type	Engagement Type	Device	Platform Version	Territory	Counts	Unique Counts
+2026-08-03	Sleep Tech	6757299435	Tap	No page	App Store search	Open	iPhone	iOS 26.6	KR	2	1
+2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 26.5	KR	1	1
+2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 27.0	KR	3	1
 2026-08-02	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.3	US	1	1
-2026-07-31	Sleep Tech	6757299435	Page view	Product page	App referrer		iPhone	iOS 26.5	US	1	1
+2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	1	1
+2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 27.0	KR	1	1
+2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.6	KR	11	1
+2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Open	iPhone	iOS 26.6	KR	6	1
 2026-08-01	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.4	US	1	1
 2026-08-01	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	1	1
+2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 26.6	KR	5	1
+2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Re-download	iPhone	iOS 26.5	KR	1	1
+2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Re-download	iPhone	iOS 26.6	KR	1	1
