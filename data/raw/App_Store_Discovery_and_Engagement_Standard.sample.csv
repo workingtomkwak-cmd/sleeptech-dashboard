@@ -1,19 +1,9 @@
 Date	App Name	App Apple Identifier	Event	Page Type	Source Type	Engagement Type	Device	Platform Version	Territory	Counts	Unique Counts
-2026-08-04	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	BR	2	2
-2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 27.0	KR	1	1
-2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	BR	2	1
-2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	1	1
-2026-08-04	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	TR	3	1
-2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Open	iPhone	iOS 26.6	KR	6	1
-2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Re-download	iPhone	iOS 26.6	KR	1	1
-2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	1	1
-2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.6	BO	1	1
-2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 26.6	KR	5	1
-2026-08-04	Sleep Tech	6757299435	Tap	No page	App Store search	Get	iPhone	iOS 26.5	TR	1	1
-2026-08-03	Sleep Tech	6757299435	Tap	No page	App Store search	Open	iPhone	iOS 26.6	KR	2	1
-2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 26.5	KR	1	1
-2026-08-03	Sleep Tech	6757299435	Page view	Product page	App Store search		iPhone	iOS 27.0	KR	3	1
 2026-08-04	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	2	2
-2026-08-03	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.6	KR	11	1
+2026-08-04	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	TR	3	1
 2026-08-04	Sleep Tech	6757299435	Tap	No page	App Store search	Get	iPhone	iOS 26.5	BR	1	1
-2026-08-03	Sleep Tech	6757299435	Tap	Product page	App Store browse	Re-download	iPhone	iOS 26.5	KR	1	1
+2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	US	1	1
+2026-08-04	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	BR	2	2
+2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.6	BO	1	1
+2026-08-05	Sleep Tech	6757299435	Impression	No page	App Store search		iPhone	iOS 26.5	BR	2	1
+2026-08-04	Sleep Tech	6757299435	Tap	No page	App Store search	Get	iPhone	iOS 26.5	TR	1	1
