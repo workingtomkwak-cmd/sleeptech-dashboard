@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-11T21:12:52Z",
+ "generatedAt": "2026-08-12T21:11:57Z",
  "status": "ok",
  "notes": [],
  "reports": [
@@ -162,165 +162,467 @@
  ],
  "daily": {
   "2026-02-23": {
-   "totalDownloads": 2
+   "totalDownloads": 2,
+   "impressionsTotal": 6
   },
   "2026-02-24": {
-   "totalDownloads": 3
+   "totalDownloads": 3,
+   "impressionsTotal": 8,
+   "pageViewCount": 4
+  },
+  "2026-02-25": {
+   "impressionsTotal": 4,
+   "pageViewCount": 2
+  },
+  "2026-02-26": {
+   "impressionsTotal": 7
   },
   "2026-02-27": {
-   "totalDownloads": 2
+   "totalDownloads": 2,
+   "impressionsTotal": 5
   },
   "2026-02-28": {
-   "totalDownloads": 8
+   "totalDownloads": 8,
+   "impressionsTotal": 25,
+   "pageViewCount": 21
   },
   "2026-03-01": {
-   "totalDownloads": 6
+   "totalDownloads": 6,
+   "impressionsTotal": 4,
+   "pageViewCount": 1
+  },
+  "2026-03-03": {
+   "impressionsTotal": 9,
+   "pageViewCount": 18
   },
   "2026-03-04": {
-   "totalDownloads": 2
+   "totalDownloads": 2,
+   "pageViewCount": 1,
+   "impressionsTotal": 2
+  },
+  "2026-03-05": {
+   "pageViewCount": 4,
+   "impressionsTotal": 4
   },
   "2026-03-06": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "impressionsTotal": 1
+  },
+  "2026-03-07": {
+   "impressionsTotal": 2
+  },
+  "2026-03-09": {
+   "impressionsTotal": 4,
+   "pageViewCount": 4
   },
   "2026-03-10": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "impressionsTotal": 5,
+   "pageViewCount": 3
   },
   "2026-03-12": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "pageViewCount": 2,
+   "impressionsTotal": 4
   },
   "2026-03-13": {
-   "totalDownloads": 8
+   "totalDownloads": 8,
+   "impressionsTotal": 3
   },
   "2026-03-14": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "pageViewCount": 1,
+   "impressionsTotal": 4
+  },
+  "2026-03-15": {
+   "impressionsTotal": 2
   },
   "2026-03-16": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "pageViewCount": 11,
+   "impressionsTotal": 11
   },
   "2026-03-17": {
-   "totalDownloads": 1
+   "totalDownloads": 1,
+   "impressionsTotal": 3,
+   "pageViewCount": 1
   },
-  "2026-03-24": {
-   "totalDownloads": 1
-  },
-  "2026-03-26": {
-   "totalDownloads": 3
-  },
-  "2026-03-27": {
-   "totalDownloads": 3
-  },
-  "2026-03-29": {
-   "totalDownloads": 1
-  },
-  "2026-04-21": {
-   "totalDownloads": 1
-  },
-  "2026-04-24": {
-   "totalDownloads": 1
-  },
-  "2026-04-27": {
-   "totalDownloads": 2
-  },
-  "2026-05-26": {
-   "totalDownloads": 1
-  },
-  "2026-06-15": {
-   "totalDownloads": 1
-  },
-  "2026-06-22": {
-   "totalDownloads": 1
-  },
-  "2026-06-27": {
-   "totalDownloads": 2
-  },
-  "2026-07-03": {
-   "totalDownloads": 1
-  },
-  "2026-07-08": {
-   "totalDownloads": 1
-  },
-  "2026-07-12": {
+  "2026-03-18": {
    "pageViewCount": 1,
    "impressionsTotal": 1
   },
-  "2026-07-13": {
-   "impressionsTotal": 8,
+  "2026-03-20": {
+   "impressionsTotal": 2
+  },
+  "2026-03-22": {
+   "impressionsTotal": 1
+  },
+  "2026-03-24": {
+   "totalDownloads": 1,
+   "impressionsTotal": 1
+  },
+  "2026-03-26": {
+   "totalDownloads": 3,
+   "impressionsTotal": 4,
+   "pageViewCount": 3
+  },
+  "2026-03-27": {
+   "totalDownloads": 3,
+   "pageViewCount": 1,
+   "impressionsTotal": 3
+  },
+  "2026-03-28": {
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-03-29": {
+   "totalDownloads": 1,
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-03-30": {
+   "pageViewCount": 1
+  },
+  "2026-03-31": {
+   "impressionsTotal": 1
+  },
+  "2026-04-01": {
+   "impressionsTotal": 2
+  },
+  "2026-04-06": {
+   "impressionsTotal": 1
+  },
+  "2026-04-09": {
+   "impressionsTotal": 2,
+   "pageViewCount": 1
+  },
+  "2026-04-11": {
+   "impressionsTotal": 1
+  },
+  "2026-04-12": {
+   "impressionsTotal": 3
+  },
+  "2026-04-14": {
+   "impressionsTotal": 1
+  },
+  "2026-04-15": {
+   "impressionsTotal": 2
+  },
+  "2026-04-16": {
+   "impressionsTotal": 1
+  },
+  "2026-04-20": {
+   "impressionsTotal": 2
+  },
+  "2026-04-21": {
+   "totalDownloads": 1,
+   "impressionsTotal": 3,
+   "pageViewCount": 1
+  },
+  "2026-04-23": {
+   "impressionsTotal": 4,
+   "pageViewCount": 4
+  },
+  "2026-04-24": {
+   "totalDownloads": 1,
+   "pageViewCount": 2,
+   "impressionsTotal": 1
+  },
+  "2026-04-26": {
+   "impressionsTotal": 1
+  },
+  "2026-04-27": {
+   "totalDownloads": 2,
+   "pageViewCount": 4
+  },
+  "2026-04-28": {
+   "pageViewCount": 2,
+   "impressionsTotal": 5
+  },
+  "2026-04-29": {
+   "pageViewCount": 1,
+   "impressionsTotal": 2
+  },
+  "2026-04-30": {
+   "impressionsTotal": 1
+  },
+  "2026-05-02": {
+   "impressionsTotal": 3
+  },
+  "2026-05-03": {
+   "impressionsTotal": 1
+  },
+  "2026-05-04": {
+   "pageViewCount": 1
+  },
+  "2026-05-05": {
+   "pageViewCount": 1
+  },
+  "2026-05-07": {
+   "impressionsTotal": 2
+  },
+  "2026-05-08": {
+   "impressionsTotal": 1
+  },
+  "2026-05-09": {
+   "impressionsTotal": 1
+  },
+  "2026-05-10": {
+   "impressionsTotal": 1
+  },
+  "2026-05-11": {
+   "impressionsTotal": 3
+  },
+  "2026-05-12": {
+   "pageViewCount": 1
+  },
+  "2026-05-13": {
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-05-14": {
+   "impressionsTotal": 3,
+   "pageViewCount": 1
+  },
+  "2026-05-16": {
+   "pageViewCount": 1
+  },
+  "2026-05-17": {
+   "impressionsTotal": 1
+  },
+  "2026-05-18": {
+   "impressionsTotal": 2
+  },
+  "2026-05-19": {
+   "impressionsTotal": 1
+  },
+  "2026-05-21": {
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-05-22": {
+   "impressionsTotal": 1
+  },
+  "2026-05-23": {
+   "impressionsTotal": 1
+  },
+  "2026-05-24": {
+   "impressionsTotal": 2,
+   "pageViewCount": 3
+  },
+  "2026-05-25": {
+   "impressionsTotal": 1
+  },
+  "2026-05-26": {
+   "totalDownloads": 1,
+   "impressionsTotal": 1,
    "pageViewCount": 2
+  },
+  "2026-05-28": {
+   "impressionsTotal": 1
+  },
+  "2026-05-29": {
+   "impressionsTotal": 1
+  },
+  "2026-05-30": {
+   "pageViewCount": 1,
+   "impressionsTotal": 1
+  },
+  "2026-05-31": {
+   "pageViewCount": 2,
+   "impressionsTotal": 7
+  },
+  "2026-06-02": {
+   "pageViewCount": 1
+  },
+  "2026-06-05": {
+   "impressionsTotal": 2
+  },
+  "2026-06-06": {
+   "impressionsTotal": 2
+  },
+  "2026-06-07": {
+   "impressionsTotal": 1
+  },
+  "2026-06-08": {
+   "impressionsTotal": 5,
+   "pageViewCount": 3
+  },
+  "2026-06-09": {
+   "impressionsTotal": 1
+  },
+  "2026-06-10": {
+   "impressionsTotal": 1
+  },
+  "2026-06-11": {
+   "impressionsTotal": 2,
+   "pageViewCount": 1
+  },
+  "2026-06-15": {
+   "totalDownloads": 1,
+   "impressionsTotal": 5,
+   "pageViewCount": 1
+  },
+  "2026-06-18": {
+   "impressionsTotal": 2
+  },
+  "2026-06-19": {
+   "impressionsTotal": 2
+  },
+  "2026-06-20": {
+   "pageViewCount": 1
+  },
+  "2026-06-21": {
+   "impressionsTotal": 2
+  },
+  "2026-06-22": {
+   "totalDownloads": 1,
+   "pageViewCount": 1,
+   "impressionsTotal": 1
+  },
+  "2026-06-23": {
+   "pageViewCount": 1,
+   "impressionsTotal": 1
+  },
+  "2026-06-24": {
+   "impressionsTotal": 3,
+   "pageViewCount": 1
+  },
+  "2026-06-26": {
+   "impressionsTotal": 2,
+   "pageViewCount": 1
+  },
+  "2026-06-27": {
+   "totalDownloads": 2,
+   "impressionsTotal": 3,
+   "pageViewCount": 3
+  },
+  "2026-06-28": {
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-06-29": {
+   "impressionsTotal": 3
+  },
+  "2026-07-01": {
+   "impressionsTotal": 3,
+   "pageViewCount": 1
+  },
+  "2026-07-03": {
+   "totalDownloads": 1,
+   "impressionsTotal": 2
+  },
+  "2026-07-04": {
+   "impressionsTotal": 1
+  },
+  "2026-07-05": {
+   "impressionsTotal": 4,
+   "pageViewCount": 1
+  },
+  "2026-07-06": {
+   "impressionsTotal": 2
+  },
+  "2026-07-07": {
+   "impressionsTotal": 2
+  },
+  "2026-07-08": {
+   "totalDownloads": 1,
+   "impressionsTotal": 8,
+   "pageViewCount": 1
+  },
+  "2026-07-09": {
+   "impressionsTotal": 5,
+   "pageViewCount": 1
+  },
+  "2026-07-10": {
+   "impressionsTotal": 1
+  },
+  "2026-07-11": {
+   "impressionsTotal": 1,
+   "pageViewCount": 1
+  },
+  "2026-07-12": {
+   "impressionsTotal": 2,
+   "pageViewCount": 2
+  },
+  "2026-07-13": {
+   "impressionsTotal": 12,
+   "pageViewCount": 3
   },
   "2026-07-14": {
    "totalDownloads": 18,
-   "pageViewCount": 39
+   "pageViewCount": 52
   },
   "2026-07-15": {
    "totalDownloads": 6,
-   "pageViewCount": 111,
-   "impressionsTotal": 87
+   "pageViewCount": 141,
+   "impressionsTotal": 116
   },
   "2026-07-16": {
    "totalDownloads": 6,
-   "impressionsTotal": 15,
-   "pageViewCount": 18
+   "pageViewCount": 24,
+   "impressionsTotal": 20
   },
   "2026-07-17": {
-   "impressionsTotal": 18,
-   "pageViewCount": 24
+   "impressionsTotal": 24,
+   "pageViewCount": 32
   },
   "2026-07-18": {
    "totalDownloads": 3,
-   "impressionsTotal": 6
+   "impressionsTotal": 8
   },
   "2026-07-19": {
    "totalDownloads": 3,
-   "impressionsTotal": 9,
-   "pageViewCount": 6
+   "pageViewCount": 8,
+   "impressionsTotal": 12
   },
   "2026-07-20": {
-   "impressionsTotal": 21
+   "impressionsTotal": 28
   },
   "2026-07-21": {
    "totalDownloads": 3,
-   "pageViewCount": 6,
-   "impressionsTotal": 21
+   "impressionsTotal": 28,
+   "pageViewCount": 8
   },
   "2026-07-22": {
    "totalDownloads": 27,
-   "impressionsTotal": 21,
-   "pageViewCount": 6
+   "impressionsTotal": 28,
+   "pageViewCount": 8
   },
   "2026-07-23": {
    "totalDownloads": 81,
-   "impressionsTotal": 9,
-   "pageViewCount": 3
+   "impressionsTotal": 12,
+   "pageViewCount": 4
   },
   "2026-07-24": {
    "totalDownloads": 6,
-   "impressionsTotal": 12,
-   "pageViewCount": 9
+   "pageViewCount": 12,
+   "impressionsTotal": 16
   },
   "2026-07-25": {
    "totalDownloads": 3,
-   "impressionsTotal": 15,
-   "pageViewCount": 9
+   "pageViewCount": 12,
+   "impressionsTotal": 20
   },
   "2026-07-26": {
-   "impressionsTotal": 9
+   "impressionsTotal": 12
   },
   "2026-07-27": {
-   "impressionsTotal": 3
+   "impressionsTotal": 4
   },
   "2026-07-28": {
    "totalDownloads": 3,
-   "impressionsTotal": 9
+   "impressionsTotal": 12
   },
   "2026-07-29": {
    "totalDownloads": 2,
-   "impressionsTotal": 23
+   "impressionsTotal": 31
   },
   "2026-07-30": {
-   "impressionsTotal": 21
+   "impressionsTotal": 28
   },
   "2026-07-31": {
-   "pageViewCount": 3
+   "pageViewCount": 4
   },
   "2026-08-01": {
    "impressionsTotal": 6
@@ -349,10 +651,14 @@
    "impressionsTotal": 6
   },
   "2026-08-09": {
-   "impressionsTotal": 8
+   "impressionsTotal": 12
   },
   "2026-08-10": {
-   "impressionsTotal": 3
+   "impressionsTotal": 6
+  },
+  "2026-08-11": {
+   "impressionsTotal": 3,
+   "pageViewCount": 2
   }
  }
 }
