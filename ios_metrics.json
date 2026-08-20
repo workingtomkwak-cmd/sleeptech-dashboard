@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-19T20:52:16Z",
+ "generatedAt": "2026-08-20T20:55:03Z",
  "status": "ok",
  "notes": [],
  "reports": [
@@ -542,16 +542,16 @@
    "pageViewCount": 1
   },
   "2026-07-12": {
-   "impressionsTotal": 2,
-   "pageViewCount": 2
+   "impressionsTotal": 1,
+   "pageViewCount": 1
   },
   "2026-07-13": {
-   "impressionsTotal": 12,
-   "pageViewCount": 3
+   "impressionsTotal": 8,
+   "pageViewCount": 2
   },
   "2026-07-14": {
    "totalDownloads": 18,
-   "pageViewCount": 52
+   "pageViewCount": 39
   },
   "2026-07-15": {
    "totalDownloads": 6,
@@ -677,10 +677,15 @@
    "impressionsTotal": 6
   },
   "2026-08-17": {
-   "impressionsTotal": 2
+   "impressionsTotal": 3
   },
   "2026-08-18": {
-   "impressionsTotal": 1
+   "impressionsTotal": 2
+  },
+  "2026-08-19": {
+   "totalDownloads": 1,
+   "impressionsTotal": 4,
+   "pageViewCount": 4
   }
  }
 }
