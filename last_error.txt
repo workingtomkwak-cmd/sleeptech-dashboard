@@ -1,4 +1,4 @@
-2026-11-04T00:44:47Z
+2026-11-05T00:57:40Z
 Traceback (most recent call last):
   File "/home/runner/work/sleeptech-dashboard/sleeptech-dashboard/scripts/fetch_ios_metrics.py", line 165, in <module>
     main()
@@ -15,7 +15,7 @@ Traceback (most recent call last):
     raise RuntimeError(f"HTTP {e.code} on {method} {path}: {detail}") from None
 RuntimeError: HTTP 403 on GET /v1/apps/6757299435/analyticsReportRequests: {
 "errors" : [ {
-"id" : "RP2C433C2IX5SQ5ZZERGPD54BI",
+"id" : "U42I5P32D4BLR4S2NTLMWBULKQ",
 "status" : "403",
 "code" : "FORBIDDEN.REQUIRED_AGREEMENTS_MISSING_OR_EXPIRED",
 "title" : "A required agreement is missing or has expired.",
