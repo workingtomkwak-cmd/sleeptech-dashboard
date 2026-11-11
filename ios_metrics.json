@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-01T00:01:35Z",
+ "generatedAt": "2026-11-11T00:45:00Z",
  "status": "ok",
  "notes": [],
  "reports": [
@@ -13,6 +13,8 @@
   "ARKit World Tracking Image Detection",
   "AccessorySetupKit Accessory Picker Sessions",
   "AccessorySetupKit Usage",
+  "Ad Conversions",
+  "Ad Conversions Detailed",
   "AirPlay Discovery Sessions",
   "AirPlay Errors",
   "AirPlay Performance",
@@ -56,6 +58,24 @@
   "Audio Session Api Duration",
   "Audio Session Audio Unit Usage",
   "Audio Volume Levels and Duration",
+  "Auto Reported D30 Conversions By Revenue Range",
+  "Auto Reported D30 Conversions By Revenue Range Detailed",
+  "Auto Reported D30 Free Trial Subscriptions",
+  "Auto Reported D30 Free Trial Subscriptions Detailed",
+  "Auto Reported D30 Paying Conversions",
+  "Auto Reported D30 Paying Conversions Detailed",
+  "Auto Reported D60 Conversions By Revenue Range",
+  "Auto Reported D60 Conversions By Revenue Range Detailed",
+  "Auto Reported D60 Free Trial Subscriptions",
+  "Auto Reported D60 Free Trial Subscriptions Detailed",
+  "Auto Reported D60 Paying Conversions",
+  "Auto Reported D60 Paying Conversions Detailed",
+  "Auto Reported D7 Conversions By Revenue Range",
+  "Auto Reported D7 Conversions By Revenue Range Detailed",
+  "Auto Reported D7 Free Trial Subscriptions",
+  "Auto Reported D7 Free Trial Subscriptions Detailed",
+  "Auto Reported D7 Paying Conversions",
+  "Auto Reported D7 Paying Conversions Detailed",
   "Automatic Speech Recognition Usage",
   "Bluetooth LE Advertising",
   "Bluetooth LE Connection Results",
@@ -81,6 +101,24 @@
   "Custom Language Model Builds Started",
   "Customized Transcription Requests",
   "Default Browser Usage Rate",
+  "Developer Reported D30 Conversions By Revenue Range",
+  "Developer Reported D30 Conversions By Revenue Range Detailed",
+  "Developer Reported D30 Free Trial Subscriptions",
+  "Developer Reported D30 Free Trial Subscriptions Detailed",
+  "Developer Reported D30 Paying Conversions",
+  "Developer Reported D30 Paying Conversions Detailed",
+  "Developer Reported D60 Conversions By Revenue Range",
+  "Developer Reported D60 Conversions By Revenue Range Detailed",
+  "Developer Reported D60 Free Trial Subscriptions ",
+  "Developer Reported D60 Free Trial Subscriptions Detailed",
+  "Developer Reported D60 Paying Conversions",
+  "Developer Reported D60 Paying Conversions Detailed",
+  "Developer Reported D7 Conversions By Revenue Range",
+  "Developer Reported D7 Conversions By Revenue Range Detailed",
+  "Developer Reported D7 Free Trial Subscriptions",
+  "Developer Reported D7 Free Trial Subscriptions Detailed",
+  "Developer Reported D7 Paying Conversions",
+  "Developer Reported D7 Paying Conversions Detailed",
   "Display Power Information",
   "DockKit App Usage",
   "Dynamic Buttons Usage",
@@ -161,137 +199,128 @@
   "iBeacon Stop Monitoring for Region Usage"
  ],
  "daily": {
-  "2026-08-24": {
-   "pageViewCount": 1,
+  "2026-10-04": {
+   "impressionsTotal": 2
+  },
+  "2026-10-05": {
+   "impressionsTotal": 16
+  },
+  "2026-10-06": {
+   "impressionsTotal": 27
+  },
+  "2026-10-07": {
+   "impressionsTotal": 30
+  },
+  "2026-10-08": {
    "impressionsTotal": 6
   },
-  "2026-08-25": {
-   "totalDownloads": 1,
-   "impressionsTotal": 10,
-   "pageViewCount": 4
-  },
-  "2026-08-26": {
-   "impressionsTotal": 9
-  },
-  "2026-08-27": {
-   "impressionsTotal": 12
-  },
-  "2026-08-28": {
-   "impressionsTotal": 6,
-   "pageViewCount": 3
-  },
-  "2026-08-29": {
-   "impressionsTotal": 3
-  },
-  "2026-08-30": {
+  "2026-10-09": {
    "totalDownloads": 2,
-   "pageViewCount": 3,
-   "impressionsTotal": 12
-  },
-  "2026-08-31": {
-   "impressionsTotal": 12
-  },
-  "2026-09-01": {
    "impressionsTotal": 15,
    "pageViewCount": 3
   },
-  "2026-09-02": {
+  "2026-10-10": {
+   "pageViewCount": 9,
+   "impressionsTotal": 68
+  },
+  "2026-10-11": {
+   "impressionsTotal": 27
+  },
+  "2026-10-12": {
+   "impressionsTotal": 15
+  },
+  "2026-10-13": {
    "totalDownloads": 2,
-   "impressionsTotal": 21
+   "pageViewCount": 9,
+   "impressionsTotal": 15
   },
-  "2026-09-03": {
-   "totalDownloads": 2,
-   "impressionsTotal": 18,
-   "pageViewCount": 6
-  },
-  "2026-09-04": {
-   "totalDownloads": 2,
-   "pageViewCount": 9
-  },
-  "2026-09-06": {
-   "impressionsTotal": 18,
-   "pageViewCount": 6
-  },
-  "2026-09-07": {
-   "totalDownloads": 2,
-   "impressionsTotal": 15,
-   "pageViewCount": 6
-  },
-  "2026-09-08": {
-   "totalDownloads": 2,
-   "impressionsTotal": 12,
-   "pageViewCount": 3
-  },
-  "2026-09-09": {
-   "impressionsTotal": 6
-  },
-  "2026-09-10": {
-   "impressionsTotal": 12
-  },
-  "2026-09-11": {
-   "impressionsTotal": 12,
-   "pageViewCount": 9
-  },
-  "2026-09-12": {
-   "impressionsTotal": 21
-  },
-  "2026-09-13": {
-   "impressionsTotal": 6
-  },
-  "2026-09-14": {
-   "impressionsTotal": 12
-  },
-  "2026-09-15": {
-   "pageViewCount": 6,
-   "impressionsTotal": 6
-  },
-  "2026-09-16": {
+  "2026-10-14": {
    "totalDownloads": 2,
    "pageViewCount": 12,
    "impressionsTotal": 9
   },
-  "2026-09-17": {
-   "impressionsTotal": 9
+  "2026-10-15": {
+   "totalDownloads": 2,
+   "pageViewCount": 3
   },
-  "2026-09-18": {
-   "totalDownloads": 4,
-   "impressionsTotal": 21
-  },
-  "2026-09-19": {
-   "impressionsTotal": 12
-  },
-  "2026-09-20": {
+  "2026-10-16": {
+   "totalDownloads": 2,
    "impressionsTotal": 3
   },
-  "2026-09-21": {
+  "2026-10-17": {
    "impressionsTotal": 12
   },
-  "2026-09-22": {
+  "2026-10-18": {
    "totalDownloads": 2,
-   "pageViewCount": 9,
+   "impressionsTotal": 12,
+   "pageViewCount": 3
+  },
+  "2026-10-19": {
+   "impressionsTotal": 6
+  },
+  "2026-10-20": {
+   "impressionsTotal": 9
+  },
+  "2026-10-21": {
+   "impressionsTotal": 9
+  },
+  "2026-10-22": {
+   "impressionsTotal": 12
+  },
+  "2026-10-23": {
+   "impressionsTotal": 6
+  },
+  "2026-10-24": {
+   "impressionsTotal": 6
+  },
+  "2026-10-25": {
+   "impressionsTotal": 6
+  },
+  "2026-10-26": {
+   "impressionsTotal": 15
+  },
+  "2026-10-27": {
+   "impressionsTotal": 12
+  },
+  "2026-10-28": {
+   "impressionsTotal": 3
+  },
+  "2026-10-29": {
+   "impressionsTotal": 6
+  },
+  "2026-10-30": {
+   "impressionsTotal": 12
+  },
+  "2026-10-31": {
+   "impressionsTotal": 6
+  },
+  "2026-11-01": {
+   "impressionsTotal": 15
+  },
+  "2026-11-02": {
+   "impressionsTotal": 6
+  },
+  "2026-11-03": {
+   "impressionsTotal": 15
+  },
+  "2026-11-04": {
+   "impressionsTotal": 3
+  },
+  "2026-11-05": {
+   "impressionsTotal": 15
+  },
+  "2026-11-06": {
+   "totalDownloads": 2,
    "impressionsTotal": 27
   },
-  "2026-09-23": {
-   "impressionsTotal": 9
-  },
-  "2026-09-24": {
+  "2026-11-07": {
    "impressionsTotal": 3
   },
-  "2026-09-25": {
+  "2026-11-08": {
    "impressionsTotal": 6
   },
-  "2026-09-26": {
-   "impressionsTotal": 3
-  },
-  "2026-09-27": {
-   "impressionsTotal": 18,
-   "pageViewCount": 6
-  },
-  "2026-09-28": {
-   "impressionsTotal": 4
-  },
-  "2026-09-29": {
-   "impressionsTotal": 6
+  "2026-11-09": {
+   "impressionsTotal": 1
   }
  }
 }
