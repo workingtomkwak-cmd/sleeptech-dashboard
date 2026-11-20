@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T01:56:10Z",
+ "generatedAt": "2026-11-20T01:49:41Z",
  "status": "ok",
  "notes": [],
  "reports": [
@@ -199,18 +199,14 @@
   "iBeacon Stop Monitoring for Region Usage"
  ],
  "daily": {
-  "2026-10-12": {
+  "2026-10-13": {
+   "pageViewCount": 3,
    "impressionsTotal": 5
   },
-  "2026-10-13": {
-   "totalDownloads": 1,
-   "pageViewCount": 6,
-   "impressionsTotal": 10
-  },
   "2026-10-14": {
-   "totalDownloads": 2,
-   "pageViewCount": 12,
-   "impressionsTotal": 9
+   "totalDownloads": 1,
+   "pageViewCount": 8,
+   "impressionsTotal": 6
   },
   "2026-10-15": {
    "totalDownloads": 2,
@@ -317,10 +313,14 @@
    "impressionsTotal": 15
   },
   "2026-11-16": {
-   "impressionsTotal": 28
+   "impressionsTotal": 42
   },
   "2026-11-17": {
-   "impressionsTotal": 4
+   "impressionsTotal": 8
+  },
+  "2026-11-18": {
+   "totalDownloads": 1,
+   "impressionsTotal": 7
   }
  }
 }
